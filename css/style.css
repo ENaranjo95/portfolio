@@ -158,6 +158,7 @@ header nav ul li a{
   color: black;
 }
 .projects img{
+  height: 160px;
   width: 100%;
 }
 /* .projects figure{
