@@ -1,0 +1,233 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************/
+/* LAYOUT
+/*******************************************/
+
+header {
+  width: 100%;
+  padding-bottom: 5%;
+}
+footer {
+  width: 100%;
+}
+.leader, .work{
+  border: 1px solid black;
+}
+figure{
+  border: 1px solid black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header{
+  background-image: url(../img/space.jpg);
+}
+header nav{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: black;
+}
+.scrolled{
+  transition: 200ms linear;
+  display: none;
+}
+header nav ul{
+  margin: 0;
+}
+header nav ul li{
+  margin: 2% 5% 2% 0;
+  display: inline-block;
+}
+header nav ul li a{
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.hamburger{
+  display: none;
+}
+.me{
+  height: 500px;
+  text-align: center;
+}
+.main {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+.me h1{
+  font-size: 2.2rem;
+  color: white;
+}
+.me figcaption{
+  font-size: 1rem;
+  margin-top: 5%;
+  color: white;
+}
+.aboutMe, .work, .leader{
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+}
+.aboutMe h2, .work h2, .leader h2{
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+.work h4, .leader h4{
+  font-size: 1rem;
+  text-align: left;
+}
+.work span, .leader span{
+  float: left;
+}
+.aboutMe p, .leader p, .work p{
+  font-size: .8rem;
+  margin-top: 4%;
+  text-align: left;
+  clear: both;
+}
+.work p a{
+  color: #000;
+  text-decoration: none;
+}
+.projects{
+  padding: 5% 0 5% 0;
+}
+.projects figure{
+  height: 200px;
+  width: 18%;
+  margin: 0 1% 0 1%;
+  text-align: center;
+  float: left;
+}
+.projects a{
+  text-decoration: none;
+  color: black;
+}
+.projects img{
+  width: 100%;
+}
+/* .projects figure{
+  height: 280px;
+  width: 25%;
+  margin: 0 4% 5% 4%;
+  border-radius: 25px;
+  text-align: center;
+  float: left;
+} */
+.projects figure span{
+  font-size: 1rem;
+}
+.personal{
+  display: none;
+}
+footer{
+  padding: 5% 5% 5% 5%;
+  background-color: #000;
+  clear: both;
+}
+.links{
+  text-align: center;
+}
+.links h3{
+  font-size: 2rem;
+  color: white;
+}
+.links a i{
+  font-size: 6rem;
+  margin: 0 5% 0 5%;
+  color: white;
+}
+footer p{
+  font-size: 1rem;
+  margin-bottom: 5%;
+  color: white;
+}
+footer p a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+/****************************************************/
+/**************** Mobile Responsive *****************/
+/****************************************************/
+@media only screen and (max-width: 500px){
+  header nav{
+    text-align: left;
+  }
+  header nav ul li{
+    display: none;
+  }
+  .me img{
+    height: 200px;
+    width: 260px;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+  .hamburger i{
+    font-size: 2rem;
+  }
+  .projects figure{
+    width: 95%;
+    margin: 5% 2.5% 5% 2.5%;
+  }
+}
