@@ -70,6 +70,10 @@ figure{
 header{
   background-image: url(../img/space.jpg);
 }
+#canvas{
+  width: inherit;
+  height: inherit;
+}
 header nav{
   width: 100%;
   position: fixed;
@@ -127,6 +131,11 @@ header nav ul li a{
   font-size: 1.8rem;
   text-decoration: underline;
 }
+.work section{
+  width: 30%;
+  margin: 0 1.5% 0 1.5%;
+  float: left;
+}
 .work h4, .leader h4{
   font-size: 1rem;
   text-align: left;
@@ -146,6 +155,11 @@ header nav ul li a{
 }
 .projects{
   padding: 5% 0 5% 0;
+}
+.projects h2{
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-align: center;
 }
 .projects figure{
   height: 200px;
@@ -223,7 +237,7 @@ footer p{
     width: 80%;
   }
   figcaption.main{
-    margin-top: 30%;
+    margin-top: 15%;
     width: 80%;
   }
   .me{
@@ -248,4 +262,53 @@ footer p{
   .links a i{
     font-size: 2.5rem;
   }
+}
+
+
+
+/********************************************************/
+/****************** Tablet Responsive *******************/
+/*******************************************************/
+@media (min-width: 501px) and (max-width: 779px){
+  #canvas{
+    width: inherit;
+    height: inherit;
+  }
+  h1.main{
+    width: 80%;
+  }
+  figcaption.main{
+    margin-top: 10%;
+    width: 80%;
+  }
+  .projects figure{
+    width: 30%;
+    margin: 5% 1.5% 5% 1.5%;
+  }
+  footer{
+    padding: 2% 2% 2% 2%;
+  }
+  .display{
+    font-size: 1.3rem;
+  }
+  .links a i{
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 780px) and (max-width: 1024px){
+  #canvas{
+    width: inherit;
+    height: inherit;
+  }
+  h1.main{
+    width: 80%;
+  }
+  figcaption.main{
+    margin-top: 10%;
+    width: 80%;
+  }
+  .links a i{
+    font-size: 3.5rem;
+  }
+
 }
