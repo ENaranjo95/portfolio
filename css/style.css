@@ -57,7 +57,8 @@ footer {
   width: 100%;
 }
 .leader, .work{
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 figure{
   border: 1px solid black;
@@ -172,6 +173,9 @@ header nav ul li a{
 .projects figure span{
   font-size: 1rem;
 }
+#rps{
+  font-size: .8rem;
+}
 .personal{
   display: none;
 }
@@ -197,11 +201,9 @@ footer p{
   margin-bottom: 5%;
   color: white;
 }
-footer p a{
-  text-decoration: none;
-  color: white;
+.hide{
+  display: none;
 }
-
 
 
 
@@ -217,9 +219,15 @@ footer p a{
   header nav ul li{
     display: none;
   }
-  .me img{
+  h1.main{
+    width: 80%;
+  }
+  figcaption.main{
+    margin-top: 30%;
+    width: 80%;
+  }
+  .me{
     height: 200px;
-    width: 260px;
   }
   .hamburger{
     display: inline-block;
@@ -230,5 +238,14 @@ footer p a{
   .projects figure{
     width: 95%;
     margin: 5% 2.5% 5% 2.5%;
+  }
+  .display{
+    display: none;
+  }
+  .hide{
+    display: block;
+  }
+  .links a i{
+    font-size: 2.5rem;
   }
 }
