@@ -56,49 +56,87 @@ header {
 footer {
   width: 100%;
 }
-.leader, .work{
+.work{
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-figure{
+.projects figure{
   border: 1px solid black;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-header{
+#header{
   background-image: url(../img/space.jpg);
 }
 #canvas{
-  width: inherit;
-  height: inherit;
-}
-header nav{
-  width: 100%;
   position: fixed;
-  top: 0;
+}
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  width: 100%;
+  text-transform: uppercase;
+  position: fixed;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  padding: 11px;
+  color: white;
+  border: 1px solid white;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+}
+
+#mainNav a {
+  color: white;
+}
+
+#mainNav .navbar-nav .nav-item {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+#mainNav.navbar-shrink {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   background: black;
 }
-.scrolled{
-  transition: 200ms linear;
-  display: none;
-}
-header nav ul{
+#mainNav ul{
   margin: 0;
 }
-header nav ul li{
+#mainNav ul li{
   margin: 2% 5% 2% 0;
   display: inline-block;
 }
-header nav ul li a{
+#mainNav ul li a{
   color: white;
   font-size: 1.2rem;
   text-decoration: none;
 }
-.hamburger{
+#bars{
   display: none;
 }
+/* .scrolled{
+  transition: 200ms linear;
+} */
 .me{
   height: 500px;
   text-align: center;
@@ -113,45 +151,88 @@ header nav ul li a{
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
-}
-.me h1{
   font-size: 2.2rem;
   color: white;
 }
-.me figcaption{
+#about figcaption{
   font-size: 1rem;
   margin-top: 5%;
   color: white;
 }
-.aboutMe, .work, .leader{
+.aboutMe{
   padding: 5% 5% 5% 5%;
   text-align: center;
 }
-.aboutMe h2, .work h2, .leader h2{
-  font-size: 1.8rem;
+.aboutMe h2{
+  font-size: 2rem;
   text-decoration: underline;
+  text-align: center;
 }
-.work section{
-  width: 30%;
-  margin: 0 1.5% 0 1.5%;
+#me{
+  height: 250px;
+  border-radius: 120px;
+  margin-left: 10%;
   float: left;
 }
-.work h4, .leader h4{
-  font-size: 1rem;
-  text-align: left;
-}
-.work span, .leader span{
+.bio{
+  width: 60%;
+  padding: 0 5% 5% 5%;
   float: left;
 }
-.aboutMe p, .leader p, .work p{
-  font-size: .8rem;
+.bio p{
+  font-size: 1.2rem;
   margin-top: 4%;
+  font-family: cursive;
   text-align: left;
-  clear: both;
+  float: left;
 }
-.work p a{
-  color: #000;
-  text-decoration: none;
+.leader{
+  padding: 0 5% 0 5%;
+}
+.leader p{
+  font-size: 1.2rem;
+  font-family: cursive;
+  text-align: left;
+}
+.skills{
+  background-image: url(../img/blockChain.jpeg);
+  padding: 7% 5% 7% 5%;
+  text-align: center;
+}
+.skills h2{
+  font-size: 2rem;
+  color: white;
+}
+.column{
+  width: 33%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  float: left;
+}
+.column figure i{
+  font-size: 5rem;
+}
+.skills section figure h3{
+  font-size: 1.5rem;
+  color: white;
+}
+#html{
+  color: orange;
+}
+#node{
+  color: green;
+}
+#css{
+  color: yellow;
+}
+#mongoDB{
+  color: white;
+}
+#javaScript{
+  color: red;
+}
+#react{
+  color: blue;
 }
 .projects{
   padding: 5% 0 5% 0;

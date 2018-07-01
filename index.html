@@ -5,73 +5,104 @@
     <meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
     <meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>Edwin Naranjo's Portfolio</title>
   </head>
-  <body>
+  <body id="pageTop">
     <!-- My name and links to social media-->
     <header id="header" class="clearfix">
       <canvas id="canvas"></canvas>
-      <!-- <nav class="scrolled">
+      <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top" >
+        <button id="bars"class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
         <ul>
-          <li><a href="">My Blog</a></li>
-          <li><a href="">Resume</a></li>
-          <li><a href="">Road Map</a></li>
-          <li><a href="">Cryptocurrency</a></li>
-          <li class="hamburger"><a href=""><i class="fas fa-bars"></i></a></li>
+          <li>
+            <a class="nav js-scroll-trigger" href="#about">About Me</a>
+          </li>
+          <li>
+            <a class="nav js-scroll-trigger" href="#skill">Skills</a>
+          </li>
+          <li>
+            <a class="nav js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <!-- <li>
+            <a href="">Block Chain Project</a>
+          </li> -->
         </ul>
-      </nav> -->
-      <section class="me">
+      </nav>
+      <section id="about" class="me">
         <h1 class="main">Edwin X. Naranjo</h1>
         <figcaption class="main">"If you are working on something that you really care about, you don't have to be pushed. The vision pulls you." - Steve Jobs</figcaption>
       </section>
     </header>
-    <!--More about my experience and leadership qualities-->
+    <!-- About Me -->
     <section class="clearfix">
 
-      <section class="aboutMe">
+      <section class="aboutMe clearfix">
+
         <h2>About Me</h2>
-        <p>I grew up in predominantly white community and I felt like an outcast. Every step of growth was faced with resistance because of my cultural background. Family taught me to work hard and chase my dreams. I decided to pursue a higher education in business at the University of Massachusetts Lowell (UML). I was involved on campus as a member of Latin American Student Association (LASA) and Association of Latino Professionals For America (ALPFA). In these small communities I heard all the financial challenges and obstacles we faced as a whole. At the Hack-a-thon I came across the idea of helping my communities with education and how I can teach the importance of saving and investing by building my own webpage. Community guided me to become a Resilient Coders, build my own full-stack website to help others invest for the future.</p>
+
+        <section class="photo">
+          <img id="me" src="img/photo.jpg" alt="Photo of me, Edwin X. Naranjo">
+          <section class="bio">
+            <p>I grew up in the states but I am known to be a proud Ecuadorian. My parents brought culture, heart and vision into my life and I carried those values to pursue a higher degree in business at the University of Massachusetts Lowell (UML). I was an active leader in the Latino community on campus, as President for Association of Latino Professionals For America (ALPFA) and general attendance to Latin American Student Association. In the past few years, I started cultivating a high interest in blockchain, cryptocurrency, and the fintech industry. Now at Resilient Coders,  I learning how to integrate my knowledge in business with the technology field to be competitive in today’s world. </p>
+          </section>
+
+          <section class="leader clear">
+            <p>Joined the student organization my second semester of my first year at University of Massachusetts Lowell. My first postion was Marketing Chair, I was held responsible for posting social media status about activites on campus, active participation of ALPFA on campus, and supporting other active student organizations on campus.
+            The following year I served as the treasurer, responsible for the training members in our organization on handling the procurement credit card. Hosted successful fundraising events on campus to keep ALPFA active on campus year round.
+            My Junior and senior year I held senior level positions as Vice President and President roles, respectively. Activetly particpated at the professional level to get professionals in the ALPFA organization to interact with the students of UMass Lowell on campus and host ALPFA chapter events.</p>
+          </section>
+
+        </section>
       </section>
 
-      <section class="work clearfix">
-        <h2>Work Experience</h2>
+      <section id="skill" class="skills clearfix">
 
-        <section>
-          <h4>Software Engineer</h4>
-          <span>May 7th to Present</span>
-          <p>Expereince with HTML, CSS, Javascript, node, React and Angular 6. Practice HTML and CSS with replication of newspaper websites like New York Times, Boston.com and commercial websites like Yelp.com. Built javascript applications on <a href="#">projects</a> like slot machine, to do list, rock paper and scissors game, and a calculator.</p>
+        <h2>Skills</h2>
+
+        <section class="column">
+          <figure>
+            <i id="html" class="fab fa-html5"></i>
+            <h3>HTML</h3>
+          </figure>
+          <figure>
+            <i id="node" class="fab fa-node-js"></i>
+            <h3>Node-JS</h3>
+          </figure>
         </section>
-
-        <section>
-          <h4>Database Assistance</h4>
-          <span>December 2015 to May 2016</span>
-          <p>Responsible for weekly maintenance of data loading in the system. Created special codes to track new events, gifts and groups in advance. Assisted in training new students on our operating system and corrected data entry errors.</p>
+        <section class="column">
+          <figure>
+            <i id="css" class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+          </figure>
+          <figure>
+            <i id="mongoDB" class="fas fa-database"></i>
+            <h3>MongoDB</h3>
+          </figure>
         </section>
-
-        <section>
-          <h4>Gift Operation Associate</h4>
-          <span>April 2014 - May 2016</span>
-          <p>Responsible for the daily formating of gifts to be process into the BSR Advance database. Also audits of checks, credit cards, payroll deductions and online donations on the Advance database. Created and formated tax reciepts along with endowment reports to be analyzed and discussed in meetings. Responsible for scanning, filing, and copying important documents such as scholarship thank you letters, new endowments, and batches of data entry gifts for historical records.</p>
+        <section class="column">
+          <figure>
+            <i id="javaScript" class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+          </figure>
+          <figure>
+            <i id="react" class="fab fa-react"></i>
+            <h3>React</h3>
+          </figure>
         </section>
-
-      </section>
-      <section class="leader clearfix">
-        <h2>Leadership Experience</h2>
-
-        <h4>Association of Latino Professionals For America</h4>
-        <span>December 2014 to December of 2017</span>
-        <p>Joined the student organization my second semester of my first year at University of Massachusetts Lowell. My first postion was Marketing Chair, I was held responsible for posting social media status about activites on campus, active participation of ALPFA on campus, and supporting other active student organizations on campus.
-        The following year I served as the treasurer, responsible for the training members in our organization on handling the procurement credit card. Hosted successful fundraising events on campus to keep ALPFA active on campus year round.
-        My Junior and senior year I held senior level positions as Vice President and President roles, respectively. Activetly particpated at the professional level to get professionals in the ALPFA organization to interact with the students of UMass Lowell on campus and host ALPFA chapter events.</p>
       </section>
 
     </section>
     <!-- Projects worked in RC-->
-    <section class="projects clearfix">
+    <section id="projects" class="projects clearfix">
 
       <h2>Projects</h2>
 
@@ -106,12 +137,12 @@
           <span id="rps">Rock, Paper, Scissors, Lizard beats Spock</span>
         </a>
       </figure>
-      <figure class="personal">
+      <!-- <figure class="personal">
         <a href="">
           <img src="#" alt="#">
           <span>Personal</span>
         </a>
-      </figure>
+      </figure> -->
 
     </section>
     <!-- Links to email and resume, personal projects-->
@@ -129,7 +160,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/TweenLite.min.js"></script>
     <script src="js/EasePack.min.js"></script>
+    <script src="js/grayscale.min.js"></script>
     <script src="js/rAF.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/grayscale.js"></script>
   </body>
 </html>
