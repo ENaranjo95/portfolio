@@ -71,7 +71,7 @@ footer {
   background-image: url(../img/space.jpg);
 }
 #canvas{
-  position: fixed;
+  position: static;
 }
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -308,6 +308,10 @@ footer p{
 /**************** Mobile Responsive *****************/
 /****************************************************/
 @media only screen and (max-width: 500px){
+  #canvas{
+    height: inherit;
+    width: inherit;
+  }
   header nav{
     text-align: left;
   }
@@ -352,8 +356,8 @@ footer p{
 /*******************************************************/
 @media (min-width: 501px) and (max-width: 779px){
   #canvas{
-    width: inherit;
     height: inherit;
+    width: inherit;
   }
   h1.main{
     width: 80%;
@@ -378,8 +382,8 @@ footer p{
 }
 @media (min-width: 780px) and (max-width: 1024px){
   #canvas{
-    width: inherit;
     height: inherit;
+    width: inherit;
   }
   h1.main{
     width: 80%;
