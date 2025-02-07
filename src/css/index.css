@@ -1,6 +1,17 @@
 @import 'tailwindcss';
+@import './root.css';
 
 
 @theme {
+    --font-display: "Lato", "sans-serif";
 
+    /* Custom Breakpoints */
+    --breakpoint-xs: 30rem; /* 480px */
+    --breakpoint-sm: 42rem; /* 672px */
+    --breakpoint-md: 60rem; /* 960px */
+    --breakpoint-lg: 90rem; /* 1440px */
+    --breakpoint-xl: 110rem; /* 1760px */
+    --breakpoint-2xl: 130rem /* 2080px */
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
