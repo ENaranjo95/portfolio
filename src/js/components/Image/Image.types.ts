@@ -5,6 +5,7 @@ type ImageProps = {
   media?: string;
   height: string | number;
   width: string | number;
+  className?: string;
 };
 
 export default ImageProps;

@@ -11,7 +11,12 @@ const Card = (props: CardProps) => {
   const { img, links, className, description } = props;
 
   return (
-    <Box className={cn("w-full", className)}>
+    <Box
+      className={cn(
+        "w-full rounded-2xl border-2 border-black p-5 dark:border-white",
+        className,
+      )}
+    >
       <CardUI>
         <Flex className="inline-flex flex-col gap-6 sm:flex-row">
           <Image
@@ -25,12 +30,12 @@ const Card = (props: CardProps) => {
             <Flex className="w-full gap-2">
               {links.map((link) => (
                 <Link
-                  className="block justify-self-end"
+                  className="group block justify-self-end"
                   href={link.href}
                   target={link.target}
                   ariaLabel={`link to ${link.href}`}
                 >
-                  <ArrowTopRightIcon className="h-5.5 w-5.5 rounded-4xl border-2 border-gray-500 dark:border-white dark:text-white" />
+                  <ArrowTopRightIcon className="h-5.5 w-5.5 rounded-4xl border-2 border-gray-500 group-hover:bg-black group-hover:text-white dark:border-white dark:text-white dark:group-hover:bg-white dark:group-hover:text-black" />
                 </Link>
               ))}
             </Flex>
